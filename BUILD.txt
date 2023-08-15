@@ -102,9 +102,9 @@ RUNTIME SCRIPT LOADING
 
 BUILDING deb BINARY PACKAGE
 
- 0. sudo apt install devscripts
+ 0. sudo apt install devscripts debhelper
  1. bootstrap the premake
  2. ./bin/release/premake5 gmake2
- 3. cp ./packages/debian ./debian
+ 3. cp -r ./packages/debian ./debian
  4. debuild --no-lintian --no-sign
  5. the built package should appear in the parent dir.
